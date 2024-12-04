@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "LinkedIn Helper",
+  "version": "1.0",
+  "description": "A simple Firefox extension for LinkedIn.",
+  "content_scripts": [
+    {
+      "matches": ["https://www.linkedin.com/*"],
+      "js": ["/dist/content.bundle.js"]
+    }
+  ],
+  "permissions": ["storage"]
+}
